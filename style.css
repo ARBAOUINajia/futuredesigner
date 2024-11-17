@@ -1,0 +1,143 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #e6f7ff, #e8fbe4);
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(to right, #0073e6, #33cc99);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #004d99;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background: #33cc99;
+    color: #004d99;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #0073e6;
+    border-left: 5px solid #33cc99;
+    padding-left: 10px;
+}
+
+/* Grille du portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    background: #f0f8ff;
+    border: 1px solid #33cc99;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    color: #004d99;
+    margin-top: 10px;
+}
+
+.portfolio-item p {
+    color: #5f5959;
+    font-size: 0.9em;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #65a3e1;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Liens dans les sections */
+a {
+    color: #33cc99;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+}
+
+/* Boutons dynamiques (si nécessaire) */
+button {
+    background: #2dae83;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: hsl(203, 100%, 45%);
+}
